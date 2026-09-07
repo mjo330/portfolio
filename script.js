@@ -47,7 +47,7 @@ if (contactForm) {
         const message = document.getElementById('message').value;
         
         // Create mailto link
-        const mailtoLink = `mailto:your-email@example.com?subject=New Portfolio Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+        const mailtoLink = `mailto:mjo330@lehigh.edu?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\\nEmail: ${email}\\n\\nMessage:\\n${message}`)}`;
         
         // Open default email client
         window.location.href = mailtoLink;
