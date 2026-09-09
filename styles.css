@@ -5,14 +5,14 @@
 }
 
 :root {
-    --primary-color: #0066cc;
-    --secondary-color: #00d4ff;
-    --dark-bg: #0a0e27;
-    --card-bg: #1a1f3a;
+    --primary-color: #ff7657;
+    --secondary-color: #80e0c0;
+    --dark-bg: #101820;
+    --card-bg: #182630;
     --text-primary: #ffffff;
-    --text-secondary: #b0b9c6;
-    --border-color: #2d3748;
-    --success-color: #10b981;
+    --text-secondary: #b6c4c9;
+    --border-color: #2b3c45;
+    --success-color: #80e0c0;
     --transition: all 0.3s ease;
 }
 
@@ -21,8 +21,9 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--dark-bg);
+    font-family: Georgia, 'Times New Roman', serif;
+    background: radial-gradient(circle at 15% 15%, rgba(128, 224, 192, 0.08), transparent 30rem),
+        var(--dark-bg);
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
@@ -248,41 +249,85 @@ body {
 
 /* Projects Section */
 .projects {
-    padding: 6rem 2rem;
+    padding: 7rem 2rem;
+    background: linear-gradient(180deg, transparent, rgba(255, 118, 87, 0.05));
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
 }
 
 .project-card {
-    background-color: var(--card-bg);
+    background: linear-gradient(155deg, rgba(24, 38, 48, 0.98), rgba(16, 24, 32, 0.98));
     border: 1px solid var(--border-color);
-    border-radius: 12px;
+    border-radius: 4px;
     overflow: hidden;
     transition: var(--transition);
     animation: fadeInUp 0.6s ease;
+    position: relative;
 }
 
 .project-card:hover {
     border-color: var(--primary-color);
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 102, 204, 0.2);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.25);
+}
+
+.featured-project {
+    border-color: rgba(255, 118, 87, 0.7);
+    box-shadow: 0 14px 36px rgba(255, 118, 87, 0.1);
 }
 
 .project-image {
     width: 100%;
-    height: 200px;
-    background: linear-gradient(135deg, rgba(0, 102, 204, 0.2), rgba(0, 212, 255, 0.1));
-    border-bottom: 2px solid var(--border-color);
+    height: 180px;
+    background: linear-gradient(135deg, rgba(128, 224, 192, 0.22), rgba(255, 118, 87, 0.2));
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1.25rem 1.5rem;
+}
+
+.project-image-fyre {
+    background: linear-gradient(125deg, #29574f 0%, #16332f 48%, #733b35 100%);
+}
+
+.project-image-label {
+    color: var(--text-primary);
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+}
+
+.project-image-badge {
+    color: var(--dark-bg);
+    background: var(--secondary-color);
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    font-family: Arial, sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.project-eyebrow {
+    color: var(--secondary-color);
+    font-family: Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    padding: 1.25rem 1.5rem 0;
+    text-transform: uppercase;
 }
 
 .project-title {
     font-size: 1.5rem;
-    padding: 1.5rem 1.5rem 0.5rem;
+    padding: 0.5rem 1.5rem;
     color: var(--text-primary);
 }
 
@@ -300,12 +345,12 @@ body {
 }
 
 .tag {
-    background-color: rgba(0, 102, 204, 0.2);
+    background-color: rgba(128, 224, 192, 0.1);
     color: var(--secondary-color);
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.85rem;
-    border: 1px solid rgba(0, 212, 255, 0.3);
+    border: 1px solid rgba(128, 224, 192, 0.3);
 }
 
 .project-links {
@@ -329,6 +374,17 @@ body {
 .project-link:hover {
     background-color: var(--primary-color);
     color: white;
+}
+
+.project-link-primary {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    font-weight: bold;
+}
+
+.project-link-primary:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-bg);
 }
 
 /* Skills Section */
