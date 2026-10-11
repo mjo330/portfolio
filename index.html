@@ -3,200 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio of Micah Oliveri-Schneider showcasing projects, skills, and experience.">
-    <title>Portfolio | Micah Oliveri-Schneider</title>
+    <meta name="description" content="Micah Oliveri-Schneider is an engineering student at Lehigh University with laboratory, customer service, education, and team leadership experience.">
+    <meta name="theme-color" content="#f5f5f2">
+    <title>Micah Oliveri-Schneider | Engineering Student</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">Micah O-S</div>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="nav-logo" href="#home" aria-label="Micah Oliveri-Schneider, home">MOS<span>.</span></a>
+            <button class="menu-toggle" id="hamburger" type="button" aria-label="Open navigation menu" aria-controls="navMenu" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-menu" id="navMenu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#experience">Experience</a></li>
+                <li><a class="nav-link" href="#involvement">Involvement</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Hi, I'm Micah Oliveri-Schneider</h1>
-            <p class="hero-subtitle">Full Stack Developer | Problem Solver | Tech Enthusiast</p>
-            <p class="hero-description">Crafting elegant solutions to complex problems with clean, efficient code.</p>
-            <a href="#projects" class="btn btn-primary">View My Work</a>
-        </div>
-        <div class="hero-image">
-            <img src="https://avatars.githubusercontent.com/u/326206245?v=4" alt="Micah Oliveri-Schneider" class="avatar">
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>
-                    I'm a passionate developer with expertise in building web applications that are both 
-                    functional and beautiful. With a strong foundation in computer science and years of 
-                    hands-on experience, I love solving challenging problems and learning new technologies.
-                </p>
-                <p>
-                    When I'm not coding, you can find me contributing to open source, writing technical 
-                    blog posts, or exploring the latest web technologies.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card featured-project">
-                    <div class="project-image project-image-fyre">
-                        <span class="project-image-label">FYRE</span>
-                        <span class="project-image-badge">Featured repository</span>
-                    </div>
-                    <p class="project-eyebrow">Coursework &amp; development</p>
-                    <h3 class="project-title">FYRE Assignments</h3>
-                    <p class="project-description">
-                        Browse my FYRE assignments, code, and project work in the GitHub repository.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">FYRE</span>
-                        <span class="tag">Assignments</span>
-                        <span class="tag">GitHub</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/mjo330/FYRE-Assignments" class="project-link project-link-primary" target="_blank" rel="noopener noreferrer">View Repository</a>
-                    </div>
+    <main>
+        <section class="hero container" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> Lehigh University · Class of 2030</p>
+                <h1>Curious by nature.<br><span>Grounded in teamwork.</span></h1>
+                <p class="hero-description">I’m Micah Oliveri-Schneider, an engineering student who enjoys learning by doing—through hands-on experiences, creative pursuits, and working with people.</p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#experience">Explore my experience <span aria-hidden="true">↓</span></a>
+                    <a class="text-link" href="mailto:mjo330@lehigh.edu">mjo330@lehigh.edu <span aria-hidden="true">↗</span></a>
                 </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <h3 class="project-title">Project Two</h3>
-                    <p class="project-description">
-                        A mobile-first e-commerce platform with payment integration and inventory management system.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Vue.js</span>
-                        <span class="tag">Express</span>
-                        <span class="tag">Stripe</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">View Demo</a>
-                        <a href="#" class="project-link">GitHub</a>
-                    </div>
+            </div>
+            <aside class="hero-card" aria-label="A little about Micah">
+                <div class="hero-card-top">
+                    <span class="card-index">01 / 04</span>
+                    <span class="card-mark" aria-hidden="true">M</span>
                 </div>
+                <div class="hero-card-bottom">
+                    <p class="eyebrow">Currently</p>
+                    <h2>Learning, contributing, and finding new ways to grow.</h2>
+                    <p>Based between Bethlehem, PA and Arlington, MA</p>
+                </div>
+                <span class="hero-orbit hero-orbit-one" aria-hidden="true"></span>
+                <span class="hero-orbit hero-orbit-two" aria-hidden="true"></span>
+            </aside>
+        </section>
 
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <h3 class="project-title">Project Three</h3>
-                    <p class="project-description">
-                        A data visualization dashboard that processes and displays real-time analytics with interactive charts.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">D3.js</span>
-                        <span class="tag">PostgreSQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">View Demo</a>
-                        <a href="#" class="project-link">GitHub</a>
+        <section class="section about-section" id="about">
+            <div class="container about-layout">
+                <div class="section-heading">
+                    <p class="eyebrow">A little about me</p>
+                    <h2>People, purpose<br>and practical work.</h2>
+                </div>
+                <div class="about-copy">
+                    <p class="lead">I’m currently pursuing a Bachelor of Science in Engineering at Lehigh University.</p>
+                    <p>My experience has taken me from a university laboratory module to customer service, youth programs, and running a neighborhood yard-work business. Across each role, I’ve learned to show up, communicate clearly, and take responsibility for the work in front of me.</p>
+                    <p>Outside the classroom, I enjoy music and the outdoors, and I’m happiest when I’m part of a team working toward something together.</p>
+                    <div class="about-facts">
+                        <div><span class="fact-label">Home</span><span>Arlington, Massachusetts</span></div>
+                        <div><span class="fact-label">Studying</span><span>Engineering at Lehigh</span></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML & CSS</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Vue.js</li>
-                        <li>TypeScript</li>
-                    </ul>
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <div class="section-heading section-heading-row">
+                    <div>
+                        <p class="eyebrow">Where I’ve contributed</p>
+                        <h2>Experience</h2>
+                    </div>
+                    <p class="section-intro">A mix of hands-on learning, service, and taking initiative.</p>
                 </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Python</li>
-                        <li>Express</li>
-                        <li>PostgreSQL</li>
-                        <li>MongoDB</li>
-                    </ul>
+                <div class="experience-list">
+                    <article class="experience-card">
+                        <div class="experience-date">Aug 2026 — Present</div>
+                        <div class="experience-detail">
+                            <p class="experience-type">Laboratory experience</p>
+                            <h3>“Sensing the World” FYRE Module</h3>
+                            <p>Whitaker &amp; Keysight Laboratories</p>
+                        </div>
+                        <span class="experience-arrow" aria-hidden="true">↗</span>
+                    </article>
+                    <article class="experience-card">
+                        <div class="experience-date">Jan 2025 — Aug 2026</div>
+                        <div class="experience-detail">
+                            <p class="experience-type">Customer service</p>
+                            <h3>Sales Associate</h3>
+                            <p>ACE Hardware · Arlington, MA</p>
+                            <p class="experience-note">Operated the point of sale, stocked items, and assisted customers.</p>
+                        </div>
+                        <span class="experience-arrow" aria-hidden="true">↗</span>
+                    </article>
+                    <article class="experience-card">
+                        <div class="experience-date">Sep 2023 — Jul 2024</div>
+                        <div class="experience-detail">
+                            <p class="experience-type">Education &amp; youth programs</p>
+                            <h3>Classroom Assistant</h3>
+                            <p>Arlington Children’s Center · Arlington, MA</p>
+                            <p class="experience-note">Maintained the classroom, prepared activities, and engaged youth.</p>
+                        </div>
+                        <span class="experience-arrow" aria-hidden="true">↗</span>
+                    </article>
+                    <article class="experience-card">
+                        <div class="experience-date">Sep 2020 — Feb 2024</div>
+                        <div class="experience-detail">
+                            <p class="experience-type">Small business</p>
+                            <h3>Co-owner</h3>
+                            <p>Neighborhood Yard Work Business · Arlington, MA</p>
+                            <p class="experience-note">Managed client communication, finances, and yard-work jobs.</p>
+                        </div>
+                        <span class="experience-arrow" aria-hidden="true">↗</span>
+                    </article>
                 </div>
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <ul>
-                        <li>Git & GitHub</li>
-                        <li>Docker</li>
-                        <li>AWS</li>
-                        <li>CI/CD</li>
-                        <li>REST APIs</li>
-                    </ul>
+                <p class="education-note"><span>Education</span> Lehigh University, B.S. in Engineering · Expected May 2030 <span class="education-divider">/</span> Arlington High School · 2022–2026</p>
+            </div>
+        </section>
+
+        <section class="section involvement-section" id="involvement">
+            <div class="container">
+                <div class="section-heading section-heading-row">
+                    <div>
+                        <p class="eyebrow">Beyond the classroom</p>
+                        <h2>Leadership &amp; involvement</h2>
+                    </div>
+                    <p class="section-intro">The teams, communities, and creative outlets that keep me learning.</p>
+                </div>
+                <div class="involvement-grid">
+                    <article class="involvement-card soccer-card">
+                        <span class="involvement-number">01</span>
+                        <p class="experience-type">Team leadership · 2019–2026</p>
+                        <h3>Arlington Soccer Club</h3>
+                        <p>Selected as senior-year captain and part of four league championship seasons. Helped lead practices and warm-ups, played multiple positions, and taught soccer skills to youth with disabilities.</p>
+                    </article>
+                    <article class="involvement-card">
+                        <span class="involvement-number">02</span>
+                        <p class="experience-type">Music · 2022–2026</p>
+                        <h3>Band &amp; drumming</h3>
+                        <p>Section Leader with the AHS Concert Band and drummer in the Snowday rock band.</p>
+                    </article>
+                    <article class="involvement-card">
+                        <span class="involvement-number">03</span>
+                        <p class="experience-type">Community</p>
+                        <h3>Showing up for others</h3>
+                        <p>Board Member of Lehigh’s Ski and Snowboard Club (2026–present) and former volunteer with AHS Practice Buddies (2024–2026).</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">I'd love to hear from you. Feel free to reach out!</p>
-            
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <section class="section skills-section" id="skills">
+            <div class="container skills-layout">
+                <div class="section-heading">
+                    <p class="eyebrow">What I bring</p>
+                    <h2>Skills &amp; interests</h2>
+                    <p class="section-intro">A blend of creative, practical, and people-focused skills.</p>
                 </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <div class="skills-list">
+                    <div class="skill-row">
+                        <h3>Creative</h3>
+                        <p>Video editing &amp; production <span>·</span> Drumming</p>
+                    </div>
+                    <div class="skill-row">
+                        <h3>Working with people</h3>
+                        <p>Customer service <span>·</span> Group collaboration <span>·</span> Negotiation</p>
+                    </div>
+                    <div class="skill-row">
+                        <h3>Languages</h3>
+                        <p>English <span>Fluent</span> <span>·</span> Spanish <span>Intermediate high</span></p>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-
-            <div class="social-links">
-                <a href="https://github.com/mjo330" class="social-link" title="GitHub" target="_blank">GitHub</a>
-                <a href="#" class="social-link" title="LinkedIn">LinkedIn</a>
-                <a href="#" class="social-link" title="Twitter">Twitter</a>
-                <a href="mailto:mjo330@lehigh.edu" class="social-link" title="Email">Email</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Micah Oliveri-Schneider. All rights reserved.</p>
+        <section class="contact-section" id="contact">
+            <div class="container contact-layout">
+                <div>
+                    <p class="eyebrow">Say hello</p>
+                    <h2>Let’s connect.</h2>
+                    <p class="contact-copy">Interested in getting in touch? I’d be glad to hear from you.</p>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:mjo330@lehigh.edu">mjo330@lehigh.edu <span aria-hidden="true">↗</span></a>
+                    <a href="tel:+17815394998">(781) 539-4998 <span aria-hidden="true">↗</span></a>
+                    <a href="https://www.linkedin.com/in/micah-oliveri-schneider-178925440/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                    <a href="https://github.com/mjo330" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a class="nav-logo" href="#home">MOS<span>.</span></a>
+            <p>Micah Oliveri-Schneider · <span id="year">2026</span></p>
+            <a class="back-to-top" href="#home">Back to top ↑</a>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
