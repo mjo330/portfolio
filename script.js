@@ -24,7 +24,7 @@ if (currentYear) {
 }
 
 const navLinks = document.querySelectorAll('.nav-link');
-const sections = document.querySelectorAll('#about, #experience, #involvement, #skills, #contact');
+const sections = document.querySelectorAll('#about, #projects, #experience, #involvement, #interests, #skills, #resume, #contact');
 
 if ('IntersectionObserver' in window && navLinks.length && sections.length) {
     const sectionObserver = new IntersectionObserver((entries) => {

@@ -334,6 +334,189 @@ h1,
     background: var(--surface);
 }
 
+.projects-section {
+    background: var(--paper);
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--line);
+}
+
+.project-art {
+    position: relative;
+    min-height: 340px;
+    overflow: hidden;
+    background: #173e37;
+    color: white;
+    isolation: isolate;
+}
+
+.project-art-label,
+.project-art-caption {
+    position: absolute;
+    z-index: 1;
+}
+
+.project-art-label {
+    top: 1.5rem;
+    left: 1.5rem;
+    color: #c3d8cf;
+    font-size: 0.67rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+}
+
+.project-art-label span {
+    padding-inline: 0.25rem;
+}
+
+.project-art-caption {
+    right: 1.5rem;
+    bottom: 1.2rem;
+    font-family: var(--display-font);
+    font-size: clamp(2rem, 4vw, 3.15rem);
+    font-weight: 700;
+    letter-spacing: -0.07em;
+    line-height: 0.95;
+    text-align: right;
+}
+
+.circuit-ring,
+.circuit-node,
+.circuit-line {
+    position: absolute;
+}
+
+.circuit-ring {
+    top: 50%;
+    left: 43%;
+    border: 1px solid rgba(194, 220, 206, 0.35);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circuit-ring-one {
+    width: 220px;
+    height: 220px;
+}
+
+.circuit-ring-two {
+    width: 145px;
+    height: 145px;
+}
+
+.circuit-node {
+    z-index: 1;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #c3d8cf;
+    border-radius: 50%;
+    background: #173e37;
+    box-shadow: 0 0 0 5px rgba(195, 216, 207, 0.08);
+}
+
+.circuit-node-one {
+    top: calc(50% - 7px);
+    left: calc(43% - 7px);
+}
+
+.circuit-node-two {
+    top: calc(50% - 116px);
+    left: calc(43% - 7px);
+}
+
+.circuit-node-three {
+    top: calc(50% + 30px);
+    left: calc(43% + 65px);
+}
+
+.circuit-line {
+    z-index: -1;
+    width: 1px;
+    height: 105px;
+    background: rgba(194, 220, 206, 0.4);
+    transform-origin: top center;
+}
+
+.circuit-line-one {
+    top: 50%;
+    left: 43%;
+}
+
+.circuit-line-two {
+    top: calc(50% + 3px);
+    left: calc(43% + 3px);
+    transform: rotate(65deg);
+}
+
+.project-content {
+    align-self: center;
+    padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.project-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-heading .experience-type {
+    margin-bottom: 0.6rem;
+}
+
+.project-heading h3 {
+    max-width: 340px;
+    margin: 0;
+    font-family: var(--display-font);
+    font-size: clamp(1.45rem, 2.7vw, 2rem);
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    line-height: 1.2;
+}
+
+.project-link {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-top: 0.2rem;
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.project-link:hover {
+    color: var(--ink);
+}
+
+.project-content > p {
+    margin-bottom: 1.2rem;
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tags span {
+    padding: 0.35rem 0.65rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 0.72rem;
+}
+
 .about-layout,
 .skills-layout {
     display: grid;
@@ -495,6 +678,129 @@ h1,
 
 .involvement-section {
     background: var(--surface);
+}
+
+.interests-section {
+    background: var(--surface);
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.interest-card {
+    min-height: 200px;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+}
+
+.interest-card + .interest-card {
+    padding-left: 1.5rem;
+    border-left: 1px solid var(--line);
+}
+
+.interest-number {
+    display: block;
+    margin-bottom: 1.8rem;
+    color: var(--accent);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.interest-card h3 {
+    margin-bottom: 0.5rem;
+    font-family: var(--display-font);
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -0.035em;
+}
+
+.interest-card p {
+    max-width: 290px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.88rem;
+}
+
+.resume-section {
+    padding-block: 84px;
+    background: #e8ece7;
+}
+
+.resume-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: clamp(3rem, 9vw, 8rem);
+    max-width: 980px;
+}
+
+.resume-art {
+    min-height: 300px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: #d8e1d9;
+}
+
+.resume-paper {
+    width: 180px;
+    min-height: 235px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 22px;
+    background: white;
+    box-shadow: 0 15px 40px rgba(24, 42, 34, 0.13);
+    transform: rotate(-4deg);
+}
+
+.resume-paper-monogram {
+    color: var(--accent);
+    font-family: var(--display-font);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.08em;
+}
+
+.resume-paper-rule {
+    width: 100%;
+    height: 1px;
+    margin-block: 2px;
+    background: #dfe4de;
+}
+
+.resume-paper-line {
+    width: 73%;
+    height: 4px;
+    border-radius: 2px;
+    background: #e6e9e5;
+}
+
+.resume-paper-line-long {
+    width: 100%;
+}
+
+.resume-paper-line-short {
+    width: 48%;
+}
+
+.resume-copy h2 {
+    margin: 0 0 0.8rem;
+    font-family: var(--display-font);
+    font-size: clamp(2.3rem, 4vw, 3.3rem);
+    font-weight: 600;
+    letter-spacing: -0.065em;
+    line-height: 1.13;
+}
+
+.resume-copy > p:not(.eyebrow) {
+    max-width: 430px;
+    margin-bottom: 1.5rem;
+    color: var(--muted);
 }
 
 .involvement-grid {
@@ -677,6 +983,10 @@ h1,
         width: min(100% - 48px, var(--max-width));
     }
 
+    .nav-menu {
+        gap: 1rem;
+    }
+
     .hero {
         min-height: auto;
         grid-template-columns: 1fr 0.8fr;
@@ -700,8 +1010,18 @@ h1,
         grid-template-columns: 1fr 1fr;
     }
 
+    .project-heading {
+        flex-direction: column;
+    }
+
     .soccer-card {
         grid-column: 1 / -1;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+    .nav-menu {
+        gap: 1rem;
     }
 }
 
@@ -801,6 +1121,23 @@ h1,
         min-height: 310px;
     }
 
+    .project-card,
+    .resume-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .project-art {
+        min-height: 270px;
+    }
+
+    .project-heading {
+        gap: 0.75rem;
+    }
+
+    .project-content {
+        padding: 1.5rem;
+    }
+
     .section {
         padding-block: 72px;
     }
@@ -862,6 +1199,37 @@ h1,
 
     .involvement-card {
         min-height: 265px;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .interest-card,
+    .interest-card + .interest-card {
+        min-height: auto;
+        padding: 1.25rem 0;
+        border-left: 0;
+    }
+
+    .interest-card + .interest-card {
+        border-top: 1px solid var(--line);
+    }
+
+    .interest-number {
+        margin-bottom: 1rem;
+    }
+
+    .resume-section {
+        padding-block: 64px;
+    }
+
+    .resume-layout {
+        gap: 2rem;
+    }
+
+    .resume-art {
+        min-height: 250px;
     }
 
     .involvement-number {
