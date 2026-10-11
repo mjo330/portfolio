@@ -82,6 +82,12 @@ button:focus-visible {
     color: var(--accent);
 }
 
+.nav-name {
+    font-size: 1rem;
+    letter-spacing: -0.045em;
+    white-space: nowrap;
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
@@ -1036,6 +1042,10 @@ h1,
 
     .navbar {
         min-height: 70px;
+    }
+
+    .nav-name {
+        font-size: 0.93rem;
     }
 
     .menu-toggle {
