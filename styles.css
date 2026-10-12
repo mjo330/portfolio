@@ -83,7 +83,7 @@ button:focus-visible {
 }
 
 .nav-name {
-    font-size: 1rem;
+    font-size: 1.22rem;
     letter-spacing: -0.045em;
     white-space: nowrap;
 }
@@ -1045,7 +1045,7 @@ h1,
     }
 
     .nav-name {
-        font-size: 0.93rem;
+        font-size: 1.04rem;
     }
 
     .menu-toggle {
